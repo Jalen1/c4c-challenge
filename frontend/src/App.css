@@ -1,0 +1,73 @@
+/* 
+  ================
+  COMPONENT STYLES
+  ================
+*/
+
+.add-partner-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw;
+  border-style:solid;
+  border-color:black;
+  border-radius: 1vw;
+  margin: 3vw;
+}
+
+.toggle-partner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* MainDisplay */
+
+#main-content {
+  width: 1000px;
+  padding: 20px 30px;
+  margin: auto;
+}
+
+#main-partners-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 25px;
+}
+
+h1.title {
+  text-align: center;
+  font-size: 24pt;
+
+  padding-bottom: 25px;
+}
+
+/* PartnerTile */
+
+.partner-tile {
+  width: 60vw;
+  height: 50vw;
+
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #3d3d3d;
+  border-radius: 1vw;
+
+  padding: 1vw;
+}
+
+.partner-thumbnail {
+  max-width: 330px;
+  max-height: 150px;
+}
+
+.partner-info {
+  font-size: 0.9em;
+}
