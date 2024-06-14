@@ -5,22 +5,21 @@ import { useEffect, useState} from "react";
   along with any tools to manage said information
 */
 function PartnerTile({partnerData}) {
-// useEffect(() => {
-//     fetch('http://localhost:4000', {
-//       method: 'GET',
-//     })
-//     .then((res) => res.json())
-//     .then((data) => {
-//       partnerData = data;
-//     })
-//   }, [partnerData]); 
-//   console.log("partnertile beginning: ", partnerData)
+useEffect(() => {
+    fetch('http://localhost:4000', {
+      method: 'GET',
+    })
+    .then((res) => res.json())
+    .then((data) => {
+      partnerData = data;
+    })
+  }, [partnerData]); 
+  console.log("partnertile beginning: ", partnerData)
 
   const [index, setIndex] = useState(0);
 
   const keys = Object.keys(partnerData);
   const partner = partnerData[keys[index]];
-  console.log("partner in the tile: ", partner);
    
   const url = partner.thumbnailUrl;
   const name = partner.name;
